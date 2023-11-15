@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thredd.codingtest.api", "thredd.codingtest.api\thredd.codingtest.api.csproj", "{406DC20B-EF65-4D89-8580-B3678595FF66}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thredd.codingtest.core", "thredd.codingtest.core\thredd.codingtest.core.csproj", "{1659ACEC-EFC0-4CF9-AC41-D9A9CAA5BB30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "thredd.codingtest.tests", "thredd.codingtest.tests\thredd.codingtest.tests.csproj", "{8B607B02-C770-430D-B83E-5B7A73BAAF37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D24C8F3F-FE82-452D-9752-BF3234C6FBA0}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		BEN_README.md = BEN_README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thredd.codingtest.application", "thredd.codingtest.application\thredd.codingtest.application.csproj", "{B79DE787-639F-41CB-9257-CE891A4931ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thredd.codingtest.infrastructure", "thredd.codingtest.infrastructure\thredd.codingtest.infrastructure.csproj", "{ED78A12C-E8B5-4E14-8138-3D18BCD4B32B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{406DC20B-EF65-4D89-8580-B3678595FF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{406DC20B-EF65-4D89-8580-B3678595FF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{406DC20B-EF65-4D89-8580-B3678595FF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{406DC20B-EF65-4D89-8580-B3678595FF66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1659ACEC-EFC0-4CF9-AC41-D9A9CAA5BB30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1659ACEC-EFC0-4CF9-AC41-D9A9CAA5BB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1659ACEC-EFC0-4CF9-AC41-D9A9CAA5BB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1659ACEC-EFC0-4CF9-AC41-D9A9CAA5BB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B607B02-C770-430D-B83E-5B7A73BAAF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B607B02-C770-430D-B83E-5B7A73BAAF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B607B02-C770-430D-B83E-5B7A73BAAF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B607B02-C770-430D-B83E-5B7A73BAAF37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79DE787-639F-41CB-9257-CE891A4931ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79DE787-639F-41CB-9257-CE891A4931ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79DE787-639F-41CB-9257-CE891A4931ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79DE787-639F-41CB-9257-CE891A4931ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED78A12C-E8B5-4E14-8138-3D18BCD4B32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED78A12C-E8B5-4E14-8138-3D18BCD4B32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED78A12C-E8B5-4E14-8138-3D18BCD4B32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED78A12C-E8B5-4E14-8138-3D18BCD4B32B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E407A371-EEC4-491E-A798-04371EFD324D}
+	EndGlobalSection
+EndGlobal

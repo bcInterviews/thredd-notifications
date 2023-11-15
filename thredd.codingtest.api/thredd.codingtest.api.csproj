@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.40.3" />
+    <PackageReference Include="FluentValidation" Version="11.8.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\thredd.codingtest.application\thredd.codingtest.application.csproj" />
+    <ProjectReference Include="..\thredd.codingtest.core\thredd.codingtest.core.csproj" />
+    <ProjectReference Include="..\thredd.codingtest.infrastructure\thredd.codingtest.infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>
