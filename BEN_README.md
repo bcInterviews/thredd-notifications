@@ -11,5 +11,9 @@ Seperate services for SMTP and SMS, API just then puts the relevant rquest on to
 Email templates could be used and something like Handlebars used to compose these.
 Authentication and Authorization
 OpenAPI
+Validate settings
+Better encapsulation through the stack in terms of validaiton
+SMTP credentials possible pulled from an SSM
+Email formatters / template building
 
 Although advised to spend an hour on this I did go over this time allocated. I did therefore not complete all validation, html encoding (if needed) of email message, nor persistance. Unit tests Ive added one just to show an example but I would need more time.
