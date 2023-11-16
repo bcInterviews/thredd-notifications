@@ -12,4 +12,4 @@ Email templates could be used and something like Handlebars used to compose thes
 Authentication and Authorization
 OpenAPI
 
-Although advised to spend an hour on this I did go over this time allocated. I did therefore not complete all validation, html encoding (if needed) of email message, nor persistance.
+Although advised to spend an hour on this I did go over this time allocated. I did therefore not complete all validation, html encoding (if needed) of email message, nor persistance. Unit tests Ive added one just to show an example but I would need more time.
