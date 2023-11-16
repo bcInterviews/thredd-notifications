@@ -15,5 +15,9 @@ public sealed class EmailContent
 			throw new ArgumentException("Value cannot be null or whitespace.", nameof(message));
 		if (string.IsNullOrWhiteSpace(subject))
 			throw new ArgumentException("Value cannot be null or whitespace.", nameof(subject));
+		Message = message;
+		Subject = subject;
+		To = toAddress.Value;
+		From = fromAddress.Value;
 	}
 }

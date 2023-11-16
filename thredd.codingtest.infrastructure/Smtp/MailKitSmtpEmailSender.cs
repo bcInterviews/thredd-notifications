@@ -33,7 +33,7 @@ public sealed class MailKitSmtpEmailSender : ISmtpEmailSender
         {
             if (emailContent == null) throw new ArgumentNullException(nameof(emailContent));
             using var client = new SmtpClient();
-            await client.ConnectAsync(_smtpConfiguration.Host, _smtpConfiguration.Port, SecureSocketOptions.StartTls);
+            await client.ConnectAsync(_smtpConfiguration.Host, _smtpConfiguration.Port, _smtpConfiguration.UseSsl);
             var mail = new MimeMessage();
             mail.From.Add(new MailboxAddress(emailContent.From, emailContent.From));
             mail.To.Add(new MailboxAddress(emailContent.To, emailContent.To));
