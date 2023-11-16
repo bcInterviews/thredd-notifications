@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Thredd.CodingTest.Api.Commands.SendNotification;
 using thredd.codingtest.api.Dto;
 using thredd.codingtest.api.Queries.RetrieveNotificationStatus;
@@ -14,10 +15,12 @@ namespace thredd.codingtest.api.Controllers
 	public class NotificationController : ControllerBase
 	{
 		private readonly IMediator _mediator;
+		private readonly ILogger<NotificationController> _logger;
 
-		public NotificationController(IMediator mediator)
+		public NotificationController(IMediator mediator, ILogger<NotificationController> logger)
 		{
 			_mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
+			_logger = logger ?? throw new ArgumentNullException(nameof(logger));
 		}
 
 		[HttpPost]
@@ -27,9 +30,11 @@ namespace thredd.codingtest.api.Controllers
 				notificationEvent.Message, notificationEvent.NotificationType);
 			var sendResult = await _mediator.Send(sendNotificationCommand);
 
+
 			if (sendResult.IsFailure)
 			{
-				return BadRequest(sendResult.Error);
+				_logger.LogError(sendResult.Error);
+				return BadRequest($"Failed to send notification {notificationEvent.Id}");
 			}
 
 			return Ok("Message Sent");
